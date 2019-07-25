@@ -1,0 +1,242 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Danske';
+    src: url(fonts/danst___.eot);
+    src: url(fonts/danst___.eot?#iefix) format('embedded-opentype'),url(fonts/danst___.woff) format('woff'),url(fonts/danst___.ttf) format('truetype'),url(fonts/danst___.svg#danst___) format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Danske';
+    src: url(fonts/dansts__.eot);
+    src: url(fonts/dansts__.eot?#iefix) format('embedded-opentype'),url(fonts/dansts__.woff) format('woff'),url(fonts/dansts__.ttf) format('truetype'),url(fonts/dansts__.svg#dansts__) format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Danske';
+    src: url(fonts/danshsi_.eot);
+    src: url(fonts/danshsi_.eot?#iefix) format('embedded-opentype'),url(fonts/danshsi_.woff) format('woff'),url(fonts/danshsi_.ttf) format('truetype'),url(fonts/danshsi_.svg#danshsi_) format('svg');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Danske';
+    src: url(fonts/dansti__.eot);
+    src: url(fonts/dansti__.eot?#iefix) format('embedded-opentype'),url(fonts/dansti__.woff) format('woff'),url(fonts/dansti__.ttf) format('truetype'),url(fonts/dansti__.svg#dansti__) format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DanskeHuman';
+    src: url(fonts/DanskeHuman-MediumItalic.eot);
+    src: url(fonts/DanskeHuman-MediumItalic.eot?#iefix) format('embedded-opentype'),url(fonts/DanskeHuman-MediumItalic.woff) format('woff'),url(fonts/DanskeHuman-MediumItalic.ttf) format('truetype'),url(fonts/DanskeHuman-MediumItalic.svg#dansti__) format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DanskeHuman';
+    src: url(fonts/DanskeHuman-MediumItalic.eot);
+    src: url(fonts/DanskeHuman-MediumItalic.eot?#iefix) format('embedded-opentype'),url(fonts/DanskeHuman-MediumItalic.woff) format('woff'),url(fonts/DanskeHuman-MediumItalic.ttf) format('truetype'),url(fonts/DanskeHuman-MediumItalic.svg#dansti__) format('svg');
+    font-weight: 700;
+    font-style: italic;
+}
+
+.header{
+    background: #ffffff;
+    height: 70px;
+    width: 100%;
+    font-family: 'DanskeHuman';
+    font-size: 32px;
+    line-height: 70px;
+    color: #003755;
+}
+
+.banner{
+    background: url('./images/bg.png') 0 50%;
+    min-height: 300px;
+}
+
+.contentarea{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contentpanel{
+    background: #ffffff;
+    height: 300px;
+    margin-top: -70px;
+}
+
+.fiftypercent{
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 30px 80px;
+    font-family: 'Danske';
+}
+
+.fiftypercent label{
+    font-size: 18px;
+    color: rgba(41, 37, 37, 1);
+}
+
+.fiftypercent label.value{
+    font-weight: bold;
+    font-size: 26px;
+    color: #003755;
+	border-bottom:1px solid #003755;
+	display:block;
+}
+
+.spacer{
+    height: 20px;
+}
+
+.sectionHeading{
+    font-family: 'Danske';
+    font-size: 26px;
+    color: #003755;
+    margin: 10px 0;
+}
+.pInfo{
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-family: 'Danske';
+    color: #003755;
+}
+
+.btn{
+    background: #054061;
+    border-radius: 30px;
+    color: #ffffff;
+    padding:20px;
+    border: none;
+    font-family: 'DanskeHuman';
+    font-size: 16px;
+    margin-top:-4px;
+    position: absolute;
+    margin-left: 10px;
+    cursor: pointer;
+    outline:none;
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    text-align: center;
+  }
+
+  #overlay img{
+     margin-top: 350px;
+  }
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: #003755;
+    background-color: #ffffff;
+    display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + </:hover {
+    background-color: #ffffff;
+}
+
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}
+
+inputfile:focus + label {
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+
+
+
+.js .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+
+
+/* style 1 */
+
+.inputfile-1 + label {
+    color: #003755;
+    border: 1px solid #002c44;
+    font-family: 'Danske';
+}
+
+.inputfile-1:focus + label,
+.inputfile-1.has-focus + label,
+.inputfile-1 + label:hover {
+    border: 1px solid #002c44;
+}
